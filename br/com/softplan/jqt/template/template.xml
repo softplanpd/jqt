@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+  <template autoinsert="true" context="java" deleted="false" description="sp doc" dynamic="false" enabled="true" name="spDoc">
+    /**&#13;
+    * ${objetivo}&#13;
+    * @param ${param}&#13;
+    * @return ${return}&#13;
+    */&#13;
+  </template>
+  <template autoinsert="true" context="java" deleted="false" description="Softplan Method" dynamic="false" enabled="true" name="spMethod">
+    public void softplanMethod() {&#13;
+    ${Tipo:elemType(a)} variavel = new ${Tipo:elemType(a)}();&#13;
+    &#13;
+    ${type:newType(java.util.Iterator)} iter = null;&#13;
+    ${cursor} &#13;
+    }
+  </template>
+  <template autoinsert="true" context="java" deleted="false" description="MVP View" dynamic="false" enabled="true" name="view">
+    package ${enclosing_package};&#13;
+    &#13;
+    import br.com.sonner.client.core.mvp.view.SonnerView;&#13;
+    import com.google.gwt.core.client.GWT;&#13;
+    import com.google.gwt.uibinder.client.UiBinder;&#13;
+    import com.google.gwt.uibinder.client.UiTemplate;&#13;
+    import com.google.gwt.user.client.ui.Widget;&#13;
+    &#13;
+    public class ${enclosing_type} extends SonnerView&lt;${presenter_name}&gt; implements ${presenter_name}.Display {&#13;
+    @UiTemplate("${enclosing_type}.ui.xml")&#13;
+    interface ${enclosing_type}UiBinder extends UiBinder&lt;Widget, ${enclosing_type}&gt; {&#13;
+    }&#13;
+    &#13;
+    private ${enclosing_type}UiBinder uiBinder = GWT.create(${enclosing_type}UiBinder.class);&#13;
+    &#13;
+    public ${enclosing_type}() {&#13;
+    initWidget(uiBinder.createAndBindUi(this));&#13;
+    }&#13;
+    &#13;
+    @Override&#13;
+    public void reset() {&#13;
+    }&#13;
+    &#13;
+    @Override&#13;
+    public String getDisplayTitle() {&#13;
+    return "";&#13;
+    }&#13;
+    }
+  </template>
+  <template autoinsert="true" context="java" deleted="false" description="Softplan JavaDoc" dynamic="true" dynamicStrategy="0" enabled="true" name="spwDoc">
+    /**&#13;
+     * ${objetivo}
+     * @precondition ${precondition}
+     * @postcondition ${postcondition}#{sp_parameters}
+     * @rule ${rule}#{sp_return}#{sp_throws}
+     */</template>
+  <template autoinsert="true" context="java" deleted="false" description="My description" dynamic="false" enabled="true" name="myTemplate2">
+    /**
+     * ${objetivo}
+     * ${nome}
+     */
+   </template>
+   <template autoinsert="true" context="java" deleted="false" description="My description" dynamic="false" enabled="true" name="helloWorld">
+    Hello ${world}
+   </template>
+   <template autoinsert="true" context="java" deleted="false" description="My description" dynamic="false" enabled="true" name="testespw">
+    Hello ${SOMETHING} ${asdasd} ${asdadasds}
+   </template>
+</templates>
