@@ -62,6 +62,6 @@
     Hello ${world}
    </template>
    <template autoinsert="true" context="java" deleted="false" description="My description" dynamic="false" enabled="true" name="testespw">
-    ${helloWorld} ${teste}
+    ${helloWorld} ${teste} ${teste2} ${teste3}
    </template>
 </templates>
