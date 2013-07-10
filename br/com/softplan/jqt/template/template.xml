@@ -62,8 +62,8 @@
     Hello ${world}
    </template>
    <template autoinsert="true" context="java" deleted="false" description="My description" dynamic="false" enabled="true" name="testespw">
-    ${changedAll}
+    ${changedAllAgain} ${other}
    </template>
-   <template autoinsert="true" context="html_all" deleted="false" description="asd" enabled="true" name="spTeste" dynamic="false">&lt;span&gt;${variavelChanged}
+   <template autoinsert="true" context="html_all" deleted="false" description="asd" enabled="true" name="spTeste" dynamic="false">&lt;span&gt;${variavelChanged} </span> ${other}
   </template>
 </templates>
