@@ -10,5 +10,84 @@
      */
   </template>
   
+  <template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input com formatação de CNPJs." enabled="true">
+	  <z:cnpj id="${id}" label="${label}" value="${value}"/>
+	</template>
+
+	<template id="zfCNPJOutput" name="zfCNPJOutput" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de CNPJs formatados." enabled="true">
+	  <z:cnpj id="${id}" label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
+
+	<template id="zfCPF" name="zfCPF" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input com formatação de CPFs." enabled="true">
+	  <z:cpf id="${id}" label="${label}" value="${value}"/>
+	</template>
+
+	<template id="zfCPFOutput"  name="zfCPFOutput" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de CPFs formatados." enabled="true">
+	  <z:cpf id="${id}" label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
+
+	<template id="zfDate" name="zfDate" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input com a máscara de data." enabled="true">
+	  <z:date id=${id} label="${label}" value="${value}"/>
+	</template>
+
+	<template id="zfDateOutput" name="zfDateOutput" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de textos de datas formatadas." enabled="true">
+	  <z:date id=${id} label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
+
+	<template id="zfEmail"  name="zfEmail" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input com formatação de e-mails." enabled="true">
+	  <z:email id=${id} label="${label}" value="${value}"/>
+	</template>
+
+	<template id="zfEmailOutput"  name="zfEmailOutput" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de e-mails." enabled="true">
+	  <z:email id=${id} label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
+
+	<template id="zfNumber" name="zfNumber" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input para o preenchimento de números com a formatação definida no atributo format=&quot;<FORMATO>&quot;." enabled="true">
+	  <z:number id="${id}" label="${label}" value="${value}" format=${format}/>
+	</template>
+
+	<template id="zfNumberOutput" name="zfNumberOutput"autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição destes números com a formatação definida no atributo format=&quot;<FORMATO>&quot;." enabled="true">
+	  <z:number id="${id}" label="${label}" value="${value}" format=${format} renderAsOutput="true"/>
+	</template>
+
+	<template id="zfPassword"  name="zfPassword" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input para o preenchimento de senhas." enabled="true">
+	  <z:password id="${id}" label="${label}" value="${value}"/>
+	</template>
+
+	<template id="zfPasswordOutput" name="zfPasswordOutput" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de senhas com * no lugar dos caracteres." enabled="true">
+	  <z:password id="${id}" label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
+
+	<template id="zfPhone" name="zfPhone" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input com a formatação de telefones." enabled="true">
+	  <z:phone id="${id}" label="${label}" value="${value}" phoneType="${phoneType}"/>
+	</template>
+
+	<template id="zfPhoneOutput"  name="zfPhoneOutput" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de telefones." enabled="true">
+	  <z:phone id="${id}" label="${label}" value="${value}" phoneType="${phoneType}" renderAsOutput="true"/>
+	</template>
+
+	<template id="zfText"  name="zfText" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input para o preenchimento de um texto." enabled="true">
+	  <z:text id="${id}" label="${label}" value="${value}"/>
+	</template>
+
+	<template autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um textarea para o preenchimento de um texto." enabled="true" name="zfTextarea">
+	<z:textarea id="${id}" label="${label}" value="${value}"/>
+	</template>
+
+	<template autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de um texto." enabled="true" name="zfTextareaOutput">
+	<z:textarea id="${id}" label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
+
+	<template autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de textos." enabled="true" name="zfTextOutput">
+	<z:text id="${id}" label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
+
+	<template autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input para o preenchimento de horários." enabled="true" name="zfTime">
+	<z:time id="${id}" label="${label}" value="${value}"/>
+	</template>
+
+	<template autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um output para a exibição de horários." enabled="true" name="zfTimeOutput">
+	<z:time id="${id}" label="${label}" value="${value}" renderAsOutput="true"/>
+	</template>
   
 </templates>
