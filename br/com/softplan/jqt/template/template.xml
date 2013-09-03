@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
   
-  <template autoinsert="true" context="java" deleted="false" description="Softplan JavaDoc" dynamic="true" dynamicStrategy="0" enabled="true" name="spwDoc">
-    /**&#13;
-     * ${objetivo}
-     * @precondition ${precondition}
-     * @postcondition ${postcondition}#{sp_parameters}
-     * @rule ${rule}#{sp_return}#{sp_throws}
-     */</template>
-
-   <template id="sp4" autoinsert="true" context="html_all" deleted="false" description="asd" enabled="true" name="sp4" dynamic="false">
-    &lt;span&gt;${variavelChanged} &lt;/span&gt;
-   </template>
-   
-  <template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de CNPJs." enabled="true" dynamic="false">
-   &lt;z:cnpj id="${id}" label="${label}" value="${value}"/&gt;
-  </template>
+ 
 </templates>
