@@ -9,6 +9,7 @@
      * @rule ${rule}#{sp_return}#{sp_throws}
      */</template>
 
-   <template autoinsert="true" context="html_all" deleted="false" description="asd" enabled="true" name="spTeste" dynamic="false">&lt;span&gt;${variavelChanged} &lt;span&gt; ${other} ${another}
-  </template>
+   <template autoinsert="true" context="html_all" deleted="false" description="asd" enabled="true" name="spTeste1" dynamic="false">
+    &lt;span&gt;${variavelChanged} &lt;span&gt;
+   </template>
 </templates>
