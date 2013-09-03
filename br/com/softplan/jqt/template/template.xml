@@ -33,4 +33,14 @@
   <template id="zfDateOutput" name="zfDateOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de textos de datas formatadas." enabled="true" dynamic="false">
    &lt;z:date id=${id} label="${label}" value="${value}" renderAsOutput="true"/&gt;
   </template>
+  
+  <template id="zfEmail"  name="zfEmail" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de e-mails." enabled="true" dynamic="false">
+   &lt;z:email id=${id} label="${label}" value="${value}"/&gt;
+  </template>
+
+  <template id="zfEmailOutput"  name="zfEmailOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de e-mails." enabled="true" dynamic="false">
+   &lt;z:email id=${id} label="${label}" value="${value}" renderAsOutput="true"/&gt;
+  </template>
+  
+  
 </templates>
