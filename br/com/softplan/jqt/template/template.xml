@@ -89,4 +89,21 @@
   <template id="zfTimeOutput" name="zfTimeOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de horários." enabled="true" dynamic="false">
    &lt;z:time id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
   </template>
+  
+  <template id="zfActionDefault" name="zfActionDefault" autoinsert="true" context="html_all" deleted="false" description="Usada para definir uma ação básica." enabled="true" dynamic="false">
+	  &lt;z:action id="${id}" label="${label}" action="${backingBeanMethod}" default="true"/&gt;
+  </template>
+
+  <template id="zfActionPrimary" name="zfActionPrimary" autoinsert="true" context="html_all" deleted="false" description="Usada para definir um conjunto de ações." enabled="true" dynamic="false">
+  	&lt;z:actions id="${id}" primaries="1" &gt;&#13;
+  		&lt;z:action id="${idAction}" type="${typeAction}" label="${label}" icon="z-save"/&gt;&#13;
+  		&lt;z:action id="${idAction1}" type="${typeAction1}" label="${label1}" icon="z-add"/&gt;&#13;
+  	&lt;/z:actions&gt;
+  </template>
+  
+  <template id="zfActionWithAjax" name="zfActionWithAjax" autoinsert="true" context="html_all" deleted="false" description="Usada para definir uma ação com ajax." enabled="true" dynamic="false">
+  	&lt;z:action id="${id}" label="${label}"&gt;&#13;
+  		&lt;f:ajax render="${render}" listener="#{backingBeanListener}"/&gt;&#13;
+  	&lt;/z:action&gt;
+  </template>
 </templates>
