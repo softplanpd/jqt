@@ -9,5 +9,13 @@
      * @rule ${rule}#{sp_return}#{sp_throws}
      */
   </template>
+  <template name="spwDoc1" autoinsert="true" context="java" deleted="false" description="Softplan JavaDoc" dynamic="true" dynamicStrategy="0" enabled="true">
+    /**&#13;
+     * ${objetivo}
+     * @precondition ${precondition}
+     * @postcondition ${postcondition}#{sp_parameters}
+     * @rule ${rule}#{sp_return}#{sp_throws}
+     */
+  </template>
   
 </templates>
