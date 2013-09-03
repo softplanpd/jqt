@@ -95,15 +95,106 @@
   </template>
 
   <template id="zfActionPrimary" name="zfActionPrimary" autoinsert="true" context="html_all" deleted="false" description="Usada para definir um conjunto de ações." enabled="true" dynamic="false">
-  	&lt;z:actions id="${id}" primaries="1" &gt;&#13;
-  		&lt;z:action id="${idAction}" type="${typeAction}" label="${label}" icon="z-save"/&gt;&#13;
-  		&lt;z:action id="${idAction1}" type="${typeAction1}" label="${label1}" icon="z-add"/&gt;&#13;
-  	&lt;/z:actions&gt;
+	&lt;z:actions id="${id}" primaries="1" &gt;&#13;
+	  &lt;z:action id="${idAction}" type="${typeAction}" label="${label}" icon="z-save"/&gt;&#13;
+	  &lt;z:action id="${idAction1}" type="${typeAction1}" label="${label1}" icon="z-add"/&gt;&#13;
+	&lt;/z:actions&gt;
   </template>
   
   <template id="zfActionWithAjax" name="zfActionWithAjax" autoinsert="true" context="html_all" deleted="false" description="Usada para definir uma ação com ajax." enabled="true" dynamic="false">
   	&lt;z:action id="${id}" label="${label}"&gt;&#13;
   		&lt;f:ajax render="${render}" listener="#{backingBeanListener}"/&gt;&#13;
   	&lt;/z:action&gt;
+  </template>
+  <template  id="zfCardInput" name="zfCardInput" autoinsert="true" context="html_all" deleted="false" description="Input que permite a seleção de um cartão." enabled="true" dynamic="false">
+	&lt;z:cardinput id="${id}" label="${label}"&#13;
+		value="${mBeanValue}" lookupMethod="${mBeanLookupMethod}"&#13;
+		template="${template}" var="${var}" /&gt;
+  </template>
+
+  <template id="zfCardInputMapping" name="zfCardInputMapping" autoinsert="true" context="html_all" deleted="false" description="Input que permite a seleção de um cartão com Mapping." enabled="true" dynamic="false">
+	&lt;z:cardinput id="${id}" label="${label}"&#13;
+		lookupMethod="${mBeanLookupMateriais}"&#13;
+		mapping="${mapping}"&#13;
+		template="${template}" value="${value}" var="${material}"/&gt;
+  </template>
+
+  <template id="zfCardInputOutput" name="zfCardInputOutput" autoinsert="true" context="html_all" deleted="false" description="Output que permite a exibição de um cartão." enabled="true" dynamic="false">
+	&lt;z:cardinput id="${id}" label="${label}" var="${var}"&#13;
+		value="${mBeanValue}" lookupMethod="${mBeanLookupMethod}"&#13;
+		template="${template}" renderAsOutput="true"/&gt;
+  </template>
+
+  <template id="zfCardListAll" name="zfCardListAll" autoinsert="true" context="html_all" deleted="false" description="Usada para listar cartões em um formulário." enabled="true" dynamic="false">
+	&lt;z:cardlist id="${id}" label="${label}" var="${varName}" value="${backingBeanCardListValue}"&gt;&#13;
+		&lt;f:ajax event="beforeAdd" listener="${methodListenerBeforeAdd}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="afterAdd" listener="${methodListenerAfterAdd}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="beforeEdit" listener="${methodListenerBeforeEdit}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="afterEdit" listener="${methodListenerAfterEdit}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="beforeInsert" listener="${methodListenerBeforeInsert}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="afterInsert" listener="${methodListenerAfterInsert}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="beforeUpdate" listener="${methodListenerBeforeUpdate}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="afterUpdate" listener="${methodListenerAfterUpdate}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="beforeDelete" listener="${methodListenerBeforeDelete}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="afterDelete" listener="${methodListenerAfterDelete}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="beforeCancel" listener="${methodListenerBeforeCancel}(${varName})"/&gt;&#13;
+		&lt;f:ajax event="afterCancel" listener="${methodListenerAfterCancel}(${varName})"/&gt;&#13;
+		&#13;
+		&lt;z:sortOptions&gt;&#13;
+			&lt;z:sortOption label="${labelOfSortOption}" sortExpression="${propertyOfVar} ASC"/&gt;&#13;
+		&lt;/z:sortOptions&gt;&#13;
+		&#13;
+		&lt;z:headerActions&gt;&#13;
+			&lt;z:define name="add-action"/&gt;&#13;
+		&lt;/z:headerActions&gt;&#13;
+		&#13;
+		&lt;z:card id="${idCard}" template="${templateCard}" /&gt;&#13;
+		&#13;
+		&lt;z:cardActions&gt;&#13;
+			&lt;z:define name="edit-action"/&gt;&#13;
+			&lt;z:define name="delete-action"/&gt;&#13;
+		&lt;/z:cardActions&gt;&#13;
+		&#13;
+		&lt;z:inlineForm id="${idInlineForm}"&gt;&#13;
+			&lt;z:card id="${idCardInLine}" template="${tempalteCardInLine}"/&gt;&#13;
+		&lt;/z:inlineForm&gt;&#13;
+		&#13;
+		&lt;z:inlineFormActions&gt;&#13;
+			&lt;z:define name="save-action"/&gt;&#13;
+			&lt;z:define name="cancel-action"/&gt;&#13;
+		&lt;/z:inlineFormActions&gt;&#13;
+	&lt;/z:cardlist&gt;
+  </template>
+
+  <template id="zfCardListBasic" name="zfCardListBasic" autoinsert="true" context="html_all" deleted="false" description="Usada para listar cartões em um formulário." enabled="true" dynamic="false">
+	&lt;z:cardlist id="${id}" label="${label}" var="${varName}" value="${backingBeanCardListValue}"&gt;	&#13;
+		&lt;z:card var="${varName}" value="#{backingBeanCardValue}" template="${template}" /&gt;&#13;
+	&lt;/z:cardlist&gt;
+  </template>
+
+  <template id="zfDataTableBasic" name="zfDataTableBasic" autoinsert="true" context="html_all" deleted="false" description="Exibe os registros em formato de tabela." enabled="true" dynamic="false">
+	&lt;z:dataTable id="${id}" label="${label}" var="${varName}" value="${backingBeanValue}" rows="10"&gt;&#13;
+		&lt;z:dataColumn&gt;&#13;
+			&lt;z:text id="${idText}" label="${labelText}" value="${varName}.propertyName"/&gt;&#13;
+		&lt;/z:dataColumn&gt;&#13;
+	&lt;/z:dataTable&gt;
+  </template>
+
+  <template id="zfDataTableSort" name="zfDataTableSort" autoinsert="true" context="html_all" deleted="false" description="Exibe os registros em formato de tabela com ordenação." enabled="true" dynamic="false">
+	&lt;z:dataTable id="${id}" label="${label}" var="${varName}" value="${backingBeanValue}" rows="10"&gt;&#13;
+		&lt;z:sortOptions&gt;&#13;
+			&lt;z:sortOption label="${labelOfSortOption}" sortExpression="${propertyOfVar} ASC"/&gt;&#13;
+		&lt;/z:sortOptions&gt;&#13;
+		&lt;z:dataColumn&gt;&#13;
+			&lt;z:text id="${idText}" label="${labelText}" value="${varName}.propertyName"/&gt;&#13;
+		&lt;/z:dataColumn&gt;&#13;
+	&lt;/z:dataTable&gt;
+  </template>
+
+  <template id="zfWizard" name="zfWizard" autoinsert="true" context="html_all" deleted="false" description="Representação visual de uma sequência de preenchimendo (steps)." enabled="true" dynamic="false">
+	&lt;z:wizard currentStep="${mBeanCurrentStep}"&gt;&#13;
+		&lt;z:step label="${label1}" /&gt;&#13;
+		&lt;z:step label="${label2}" disabled="${mBeanStepEnabled}" /&gt;&#13;
+	&lt;/z:wizard&gt;
   </template>
 </templates>
