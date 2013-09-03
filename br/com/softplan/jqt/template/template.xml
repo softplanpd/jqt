@@ -10,8 +10,8 @@
      */
   </template>
   
-  <template name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de CNPJs." enabled="true">
-  
+  <template name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" enabled="true">
+    &#13;
   </template>
   
 </templates>
