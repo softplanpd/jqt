@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
 
-  <template name="zfCNPJ" autoinsert="true" context="java" deleted="false" description="Softplan teste" enabled="true">
-    aa&#13;
-  </template>
+  <template autoinsert="true" context="html_tag" deleted="false" description="ordered list" enabled="true" id="org.eclipse.wst.html.ui.templates.ol" name="ol">&lt;ol&gt;
+  &lt;li&gt; Item one &lt;/li&gt;
+  &lt;li&gt; Item two &lt;/li&gt;
+&lt;/ol&gt;
+</template>
 
   
 </templates>
