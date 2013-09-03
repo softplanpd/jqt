@@ -42,11 +42,11 @@
    &lt;z:email id=${id} label="${label}" value="${value}" renderAsOutput="true"/&gt;
   </template>
   
-  <template id="zfNumber" name="zfNumber" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de números com a formatação definida no atributo FORMAT." enabled="true" dynamic="false">
+  <template id="zfNumber" name="zfNumber" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de números com a formatação." enabled="true" dynamic="false">
    &lt;z:number id="${id}" label="${label}" value="${value}" format=${format}/&gt;
   </template>
 
-  <template id="zfNumberOutput" name="zfNumberOutput"autoinsert="true" context="html_all" deleted="false" description="Output para a exibição destes números com a formatação definida no atributo FORMAT." enabled="true" dynamic="false">
+  <template id="zfNumberOutput" name="zfNumberOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição destes números com a formatação definida." enabled="true" dynamic="false">
    &lt;z:number id="${id}" label="${label}" value="${value}" format=${format} renderAsOutput="true"/&gt;
   </template>
 </templates>
