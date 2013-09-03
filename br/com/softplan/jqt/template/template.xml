@@ -10,8 +10,8 @@
      */
   </template>
   
-  <template name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="Softplan teste" enabled="true">
-    &#13;
+  <template name="zfCNPJ" autoinsert="true" context="java" deleted="false" description="Softplan teste" enabled="true">
+    aa&#13;
   </template>
   
 </templates>
