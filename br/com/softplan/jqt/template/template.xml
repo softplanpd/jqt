@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
 
-  <template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input com formatação de CNPJs." enabled="true">
+  <template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="java" deleted="false" description="A tag é usada para definir um input com formatação de CNPJs." enabled="true">
    <z:cnpj id="${id}" label="${label}" value="${value}"/>
   </template>
 
