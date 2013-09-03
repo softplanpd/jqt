@@ -49,4 +49,44 @@
   <template id="zfNumberOutput" name="zfNumberOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição destes números com a formatação definida." enabled="true" dynamic="false">
    &lt;z:number id="${id}" label="${label}" value="${value}" format=${format} renderAsOutput="true"/&gt;
   </template>
+  
+  <template id="zfPassword"  name="zfPassword" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de senhas." enabled="true" dynamic="false">
+   &lt;z:password id="${id}" label="${label}" value="${value}"/&gt;
+  </template>
+
+  <template id="zfPasswordOutput" name="zfPasswordOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de senhas com * no lugar dos caracteres." enabled="true" dynamic="false">
+   &lt;z:password id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
+  </template>
+
+  <template id="zfPhone" name="zfPhone" autoinsert="true" context="html_all" deleted="false" description="Input com a formatação de telefones." enabled="true" dynamic="false">
+   &lt;z:phone id="${id}" label="${label}" value="${value}" phoneType="${phoneType}"/&gt;
+  </template>
+
+  <template id="zfPhoneOutput"  name="zfPhoneOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de telefones." enabled="true" dynamic="false">
+   &lt;z:phone id="${id}" label="${label}" value="${value}" phoneType="${phoneType}" renderAsOutput="true"/&gt;
+  </template>
+
+  <template id="zfText"  name="zfText" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de um texto." enabled="true" dynamic="false">
+   &lt;z:text id="${id}" label="${label}" value="${value}"/&gt;
+  </template>
+
+  <template id="zfTextarea" name="zfTextarea" autoinsert="true" context="html_all" deleted="false" description="Textarea para o preenchimento de um texto." enabled="true" dynamic="false">
+   &lt;z:textarea id="${id}" label="${label}" value="${value}"/&gt;
+  </template>
+
+  <template id="zfTextareaOutput" name="zfTextareaOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de um texto." enabled="true" dynamic="false">
+   &lt;z:textarea id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
+  </template>
+
+  <template id="zfTextOutput" name="zfTextOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de textos." enabled="true" dynamic="false">
+   &lt;z:text id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
+  </template>
+
+  <template id="zfTime" name="zfTime" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de horários." enabled="true" dynamic="false">
+   &lt;z:time id="${id}" label="${label}" value="${value}"/&gt;
+  </template>
+
+  <template id="zfTimeOutput" name="zfTimeOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de horários." enabled="true" dynamic="false">
+   &lt;z:time id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
+  </template>
 </templates>
