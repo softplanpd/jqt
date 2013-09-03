@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
 
-  <template name="spwDoc" autoinsert="true" context="java" deleted="false" description="Softplan JavaDoc" dynamic="true" dynamicStrategy="0" enabled="true">
-    /**&#13;
-     * ${objetivo}
-     * @precondition ${precondition}
-     * @postcondition ${postcondition}#{sp_parameters}
-     * @rule ${rule}#{sp_return}#{sp_throws}
-     */
-  </template>
-  
   <template name="zfCNPJ" autoinsert="true" context="java" deleted="false" description="Softplan teste" enabled="true">
     aa&#13;
   </template>
+
   
 </templates>
