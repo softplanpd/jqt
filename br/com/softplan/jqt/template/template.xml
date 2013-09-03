@@ -9,6 +9,13 @@
      * @rule ${rule}#{sp_return}#{sp_throws}
      */
   </template>
+    
+  <template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de CNPJs." enabled="true" dynamic="false">
+   &lt;z:cnpj id="${id}" label="${label}" value="${value}"/&gt;
+  </template>
 
- 
+  <template id="zfCNPJOutput" name="zfCNPJOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de CNPJs formatados." enabled="true" dynamic="false">
+   &lt;z:cnpj id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
+  </template>
+
 </templates>
