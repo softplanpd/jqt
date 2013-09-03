@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
 
-  <template autoinsert="true" context="html_tag" deleted="false" description="ordered list" enabled="true" id="org.eclipse.wst.html.ui.templates.ol" name="oll">&lt;ol&gt;
-  &lt;li&gt; Item one &lt;/li&gt;
-  &lt;li&gt; Item two &lt;/li&gt;
-&lt;/ol&gt;
+<template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="A tag é usada para definir um input com formatação de CNPJs." enabled="true">&#13;
+  &lt;z:cnpj id="${id}" label="${label}" value="${value}"/&gt;&#13;
 </template>
-
   
 </templates>
