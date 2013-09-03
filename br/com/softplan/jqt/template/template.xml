@@ -26,4 +26,11 @@
    &lt;z:cpf id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
   </template>
   
+  <template id="zfDate" name="zfDate" autoinsert="true" context="html_all" deleted="false" description="Input com a máscara de data." enabled="true" dynamic="false">
+   &lt;z:date id=${id} label="${label}" value="${value}"/&gt;
+  </template>
+
+  <template id="zfDateOutput" name="zfDateOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de textos de datas formatadas." enabled="true" dynamic="false">
+   &lt;z:date id=${id} label="${label}" value="${value}" renderAsOutput="true"/&gt;
+  </template>
 </templates>
