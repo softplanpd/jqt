@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
 
-  <template id="spwDoc" name="spwDoc" autoinsert="true" context="java" deleted="false" description="Softplan JavaDoc" dynamic="true" dynamicStrategy="0" enabled="true">
+  <template name="spwDoc" autoinsert="true" context="java" deleted="false" description="Softplan JavaDoc" dynamic="true" dynamicStrategy="0" enabled="true">
     /**&#13;
      * ${objetivo}
      * @precondition ${precondition}
@@ -10,9 +10,8 @@
      */
   </template>
   
-  <template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de CNPJs." enabled="true">
-   /**&#13;
-   */
+  <template name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de CNPJs." enabled="true">
+  
   </template>
   
 </templates>
