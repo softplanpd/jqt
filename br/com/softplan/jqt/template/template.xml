@@ -25,30 +25,5 @@
   <template id="zfCPFOutput"  name="zfCPFOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de CPFs formatados." enabled="true" dynamic="false">
    &lt;z:cpf id="${id}" label="${label}" value="${value}" renderAsOutput="true"/&gt;
   </template>
-
-  <template id="zfDate" name="zfDate" autoinsert="true" context="html_all" deleted="false" description="Input com a máscara de data." enabled="true" dynamic="false">
-   &lt;z:date id=${id} label="${label}" value="${value}"/&gt;
-  </template>
-
-  <template id="zfDateOutput" name="zfDateOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de textos de datas formatadas." enabled="true" dynamic="false">
-   &lt;z:date id=${id} label="${label}" value="${value}" renderAsOutput="true"/&gt;
-  </template>
-
-  <template id="zfEmail"  name="zfEmail" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de e-mails." enabled="true" dynamic="false">
-   &lt;z:email id=${id} label="${label}" value="${value}"/&gt;
-  </template>
-
-  <template id="zfEmailOutput"  name="zfEmailOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de e-mails." enabled="true" dynamic="false">
-   &lt;z:email id=${id} label="${label}" value="${value}" renderAsOutput="true"/&gt;
-  </template>
-
-  <template id="zfNumber" name="zfNumber" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de números com a formatação definida no atributo format=&quot;<FORMATO>&quot;." enabled="true" dynamic="false">
-   &lt;z:number id="${id}" label="${label}" value="${value}" format=${format}/&gt;
-  </template>
-
-  <template id="zfNumberOutput" name="zfNumberOutput"autoinsert="true" context="html_all" deleted="false" description="Output para a exibição destes números com a formatação definida no atributo format=&quot;<FORMATO>&quot;." enabled="true" dynamic="false">
-   &lt;z:number id="${id}" label="${label}" value="${value}" format=${format} renderAsOutput="true"/&gt;
-  </template>
-
   
 </templates>
