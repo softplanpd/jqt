@@ -10,8 +10,10 @@
      */</template>
 
    <template id="sp4" autoinsert="true" context="html_all" deleted="false" description="asd" enabled="true" name="sp4" dynamic="false">
-    &lt;span&gt;${variavelChanged} &lt;span&gt;
+    &lt;span&gt;${variavelChanged} &lt;/span&gt;
    </template>
    
-   
+  <template id="zfCNPJ" name="zfCNPJ" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de CNPJs." enabled="true" dynamic="false">
+   &lt;z:cnpj id="${id}" label="${label}" value="${value}"/&gt;
+  </template>
 </templates>
