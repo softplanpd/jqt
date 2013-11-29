@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <templates>
-  <template id="zCardListAll" name="zfCardListAll" autoinsert="true" context="html_all" deleted="false" description="Usada para listar cartões em um formulário." enabled="true" dynamic="false">
+  <template id="zCardListEdit" name="zCardListEdit" autoinsert="true" context="html_all" deleted="false" description="Usada para listar cartões em um formulário." enabled="true" dynamic="false">
 		&lt;z:cardlist id="${id}" label="#{${msgs}.${key}}" var="${varName}" value="#{${backingBean}.${dataModel}}" rows="10" &gt;&#13;
 				&lt;f:ajax event="beforeAdd" listener="#{${backingBean}.${beforeAdd}(${varName})}"/&gt;&#13;
 				&lt;f:ajax event="afterAdd" listener="#{${backingBean}.${afterAdd}(${varName})}"/&gt;&#13;
@@ -20,7 +20,6 @@
 				&lt;/z:sortOptions&gt;&#13;
 				&#13;
 				&lt;z:card id="${idCard}" template="${templateCard}" /&gt;&#13;			
-				&#13;
 				&#13;
 				&lt;z:inlineForm id="${idInlineForm}"&gt;&#13;
 					&lt;z:card id="${idCardInLine}" template="${tempalteCardInLine}"/&gt;&#13;
