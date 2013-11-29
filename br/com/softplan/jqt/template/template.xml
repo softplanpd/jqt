@@ -19,7 +19,7 @@
 					&lt;z:sortOption label="#{${msgs}.${key}}" sortExpression="${propertyOfVar} ASC"/&gt;&#13;
 				&lt;/z:sortOptions&gt;&#13;
 				&#13;
-				&lt;z:card id="${idCard}" template="${templateCard}" /&gt;&#13;			
+				&lt;z:card id="${idCard}" template="${templateCard}" /&gt;
 				&#13;
 				&lt;z:inlineForm id="${idInlineForm}"&gt;&#13;
 					&lt;z:card id="${idCardInLine}" template="${tempalteCardInLine}"/&gt;&#13;
