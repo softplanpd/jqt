@@ -28,8 +28,8 @@
                 &lt;/z:cardlist&gt;
   </template>
   <template id="zCardListBasic" name="zCardListBasic" autoinsert="true" context="html_all" deleted="false" description="Usada para listar cartões em um formulário." enabled="true" dynamic="false">
-				&lt;z:cardlist id="${id}" label="#{${msgs}.${key}}" var="${varName}" value="#{${backingBean}.${collection}}" &gt;        &#13;
-					&lt;z:card var="${varName}" template="${template}" /&gt;&#13;
+				&lt;z:cardlist id="${id}" label="#{${msgs}.${key}}" var="${varName}" value="#{${backingBean}.${collection}}" &gt;&#13;
+					&lt;z:card template="${template}" /&gt;&#13;
 				&lt;/z:cardlist&gt;
   </template>
   <template id="zAction" name="zAction" autoinsert="true" context="html_all" deleted="false" description="Usada para definir uma ação básica." enabled="true" dynamic="false">
