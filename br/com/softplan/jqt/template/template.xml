@@ -18,19 +18,19 @@
   </template>
   
   <template id="zDate" name="zDate" autoinsert="true" context="html_all" deleted="false" description="Input com a máscara de data." enabled="true" dynamic="false">
-			&lt;z:date id=${id} label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" /&gt;
+			&lt;z:date id="${id}" label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" /&gt;
   </template>
 
   <template id="zDateOutput" name="zDateOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de textos de datas formatadas." enabled="true" dynamic="false">
-			&lt;z:date id=${id} label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" renderAsOutput="true" /&gt;
+			&lt;z:date id="${id}" label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" renderAsOutput="true" /&gt;
   </template>
   
   <template id="zEmail" name="zEmail" autoinsert="true" context="html_all" deleted="false" description="Input com formatação de e-mails." enabled="true" dynamic="false">
-			&lt;z:email id=${id} label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" /&gt;
+			&lt;z:email id="${id}" label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" /&gt;
   </template>
 
   <template id="zEmailOutput" name="zEmailOutput" autoinsert="true" context="html_all" deleted="false" description="Output para a exibição de e-mails." enabled="true" dynamic="false">
-			&lt;z:email id=${id} label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" renderAsOutput="true" /&gt;
+			&lt;z:email id="${id}" label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" renderAsOutput="true" /&gt;
   </template>
   
   <template id="zNumber" name="zNumber" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de números com a formatação." enabled="true" dynamic="false">
