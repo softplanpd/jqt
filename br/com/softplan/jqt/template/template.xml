@@ -154,7 +154,7 @@
   <template id="zDataTableBasic" name="zDataTableBasic" autoinsert="true" context="html_all" deleted="false" description="Exibe os registros em formato de tabela editável." enabled="true" dynamic="false">
 			&lt;z:dataTable id="${id}" label="#{${msgs}.${key}}" var="${varName}" value="#{${backingBean}.${dataModel}}" rows="10" &gt;&#13;
 				&lt;z:dataColumn&gt;&#13;
-					&lt;z:text id="${idText}" label="${labelText}" value="${varName}.propertyName" /&gt;&#13;
+					&lt;z:text id="${idText}" label="${labelText}" value="${varName}.${propertyName}" /&gt;&#13;
 				&lt;/z:dataColumn&gt;&#13;
 			&lt;/z:dataTable&gt;
   </template>
@@ -165,7 +165,7 @@
 					&lt;z:sortOption label="#{${msgs}.${keySort}}" sortExpression="${propertyOfVar} ASC" /&gt;&#13;
 				&lt;/z:sortOptions&gt;&#13;
 				&lt;z:dataColumn title="#{${msgs}.${keyColumn}}" &gt;&#13;
-					&lt;z:text id="${idText}" label="#{${msgs}.${txtKeyMessage}}" value="${varName}.propertyName" /&gt;&#13;
+					&lt;z:text id="${idText}" label="#{${msgs}.${txtKeyMessage}}" value="${varName}.${propertyName}" /&gt;&#13;
 				&lt;/z:dataColumn&gt;&#13;
 			&lt;/z:dataTable&gt;
   </template>
