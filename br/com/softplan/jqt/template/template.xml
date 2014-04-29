@@ -57,6 +57,18 @@
 			&lt;z:phone id="${id}" label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" phoneType="${phoneType}" renderAsOutput="true" /&gt;
   </template>
 
+  <template id="zTabset" name="zTabset" autoinsert="true" context="html_all" deleted="false" description="Permite criar telas com seções em abas." enabled="true" dynamic="false">
+			&lt;z:tabset activeTab="${tabsetActiveTabIndex}" tip="${tabsetTip}"&gt; 
+				&lt;z:tab label="${tabLabel}" active="${tabIsActive}"&gt; 
+				&lt;/z:tab&gt; 
+			&lt;/z:tabset&gt; 
+  </template> 
+  
+  <template id="zTab" name="zTab" autoinsert="true" context="html_all" deleted="false" description="Permite criar seção em aba." enabled="true" dynamic="false">
+			&lt;z:tab label="${tabLabel}" active="${tabIsActive}"&gt; 
+			&lt;/z:tab&gt; 
+  </template>
+  
   <template id="zText" name="zText" autoinsert="true" context="html_all" deleted="false" description="Input para o preenchimento de um texto." enabled="true" dynamic="false">
 			&lt;z:text id="${id}" label="#{${msgs}.${key}}" value="#{${backingBean}.${value}}" /&gt;
   </template>
