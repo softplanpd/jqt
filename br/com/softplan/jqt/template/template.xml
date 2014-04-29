@@ -58,14 +58,19 @@
   </template>
 
   <template id="zTabset" name="zTabset" autoinsert="true" context="html_all" deleted="false" description="Permite criar telas com seções em abas." enabled="true" dynamic="false">
-			&lt;z:tabset activeTab="${tabsetActiveTabIndex}" tip="${tabsetTip}"&gt; 
-				&lt;z:tab label="${tabLabel}" active="${tabIsActive}"&gt; 
+			&lt;z:tabset id="${tabsetId}" activeTab="${tabsetActiveTabIndex}" tip="${tabsetTip}"&gt; 
+				&lt;z:tab id="${tabId}" label="${tabLabel}" active="${tabIsActive}"&gt; 
 				&lt;/z:tab&gt; 
 			&lt;/z:tabset&gt; 
   </template> 
   
   <template id="zTab" name="zTab" autoinsert="true" context="html_all" deleted="false" description="Permite criar seção em aba." enabled="true" dynamic="false">
-			&lt;z:tab label="${tabLabel}" active="${tabIsActive}"&gt; 
+			&lt;z:tab id="${tabId}" label="${tabLabel}" active="${tabIsActive}"&gt; 
+			&lt;/z:tab&gt; 
+  </template>
+  
+  <template id="zTabChangeHandlerMethod" name="zTabChangeHandlerMethod" autoinsert="true" context="html_all" deleted="false" description="Permite criar seção em aba, com tabChangeHandlerMethod." enabled="true" dynamic="false">
+			&lt;z:tab id="${tabId}" label="${tabLabel}" active="${tabIsActive}" tabChange="#{${backingBean}.${tabChangeHandlerMethod}}"&gt; 
 			&lt;/z:tab&gt; 
   </template>
   
